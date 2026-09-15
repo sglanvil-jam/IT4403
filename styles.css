@@ -17,6 +17,10 @@ nav a {
   color: white;
 }
 
+footer a {
+  color: white;
+}
+
 main {
   max-width: 800px;
   min-height: 350px;
