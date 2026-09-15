@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #f4f4f4;
+}
+
+header, footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background: #243b63;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+}
+
+main {
+  max-width: 800px;
+  min-height: 350px;
+  margin: 30px auto;
+  padding: 25px;
+  background: white;
+}
+
+.wireframe {
+  border: 2px solid #333;
+}
+
+.wireframe div {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.wireframe div:last-child {
+  border-bottom: 0;
+}
+
+.wireframe-content {
+  min-height: 160px;
+}
