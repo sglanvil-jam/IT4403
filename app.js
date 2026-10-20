@@ -4,7 +4,7 @@ const API = 'https://openlibrary.org';
 const PAGE_SIZE = 10;
 const MAX_RESULTS = 60;
 // Only IDs are stored here. Titles and covers are retrieved from the Works API.
-const bookshelfIds = ['OL45804W', 'OL66554W', 'OL262463W', 'OL18417W'];
+const bookshelfIds = ['OL1820433W', 'OL3662987W', 'OL45804W', 'OL18417W'];
 const statusBox = document.querySelector('#status');
 
 function setStatus(message, error = false) {
