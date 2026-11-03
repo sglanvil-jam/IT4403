@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search Open Library and explore a fantasy collection in The Reading Room.">
+  <title>The Reading Room | Milestone 3</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/jquery-3.7.1.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <a class="brand" href="#main">The Reading Room<span>OPEN LIBRARY BOOK EXPLORER</span></a>
+  <nav aria-label="Main navigation"><a href="#search-section">Search</a><a href="#details-section">Book details</a><a href="#collection-section">Fantasy collection</a></nav>
+</header>
+<main id="main">
+  <section class="intro"><p class="eyebrow">A NEW CHAPTER STARTS HERE</p><h1>Find your next read.</h1><p>Search for a book, explore its story, or discover something magical in our fantasy collection.</p></section>
+  <section id="search-section" aria-labelledby="search-heading">
+    <h2 id="search-heading">Search books</h2>
+    <form id="search-form" novalidate>
+      <label for="query">Enter a title or keywords</label>
+      <div class="search-row"><input id="query" type="search" maxlength="200" placeholder="Try: Jamaican literature" aria-describedby="search-hint"><button id="search-button" type="submit">Search books</button></div>
+      <p id="search-hint" class="hint">10 books per view · Explore up to the first 50 results</p>
+    </form>
+    <h2>Search results</h2>
+    <p id="search-status" class="notice" role="status">Enter a search term to begin.</p>
+    <div id="results" class="grid" aria-busy="false"></div>
+    <nav id="pagination" class="pagination" aria-label="Search result pages" hidden></nav>
+  </section>
+  <section id="details-section" class="section-space" aria-labelledby="details-heading">
+    <h2 id="details-heading">Selected-book details</h2>
+    <p id="details-status" class="notice" role="status">Select a book from the results or collection to read more.</p>
+    <div id="details" class="details" aria-busy="false"></div>
+  </section>
+  <section id="collection-section" class="section-space" aria-labelledby="collection-heading">
+    <div class="section-heading"><h2 id="collection-heading">The fantasy collection</h2><button id="collection-retry" class="secondary" type="button" hidden>Retry collection</button></div>
+    <p class="hint">Explore up to 10 books from Open Library’s fantasy subject.</p>
+    <p id="collection-status" class="notice" role="status">Loading the fantasy collection…</p>
+    <div id="collection" class="grid" aria-busy="true"></div>
+  </section>
+  <noscript><p>Enable JavaScript to search and load books from Open Library.</p></noscript>
+</main>
+<footer><p>Shemar Glanville · IT 4403 · Milestone 3</p><p>Book data and covers from <a href="https://openlibrary.org">Open Library</a> · <a href="https://ccse.kennesaw.edu/it/">CCSE Department of IT</a></p></footer>
+</body>
+</html>
